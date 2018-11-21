@@ -1,0 +1,246 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.pagewrapper {
+  display: grid;
+  width:100%;
+}
+
+  /* Home Page { */
+  /* Menu Bar */
+.FloatCenter{
+  float:center;
+}
+
+.topofpage{
+
+  width:100%;
+  z-index:1;
+  }
+.topofpage{
+  top:0;
+    }
+
+.red,.hover-red:hover{
+  color:#707070!important;
+  background-color:White!important;
+  }
+.NavbarDiv{
+  text-align:left!important;
+  font-size:18px!important;
+  margin: auto;
+  float:center;
+}
+
+.Navbar{
+  padding:8px 16px;
+  
+  float:right;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  /*button*/
+    border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  /*Large-Padding*/
+  padding:12px 24px!important;
+  }
+
+.Navbar:hover{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+.white,.hover-white:hover{
+  color:WHITE!important;
+  background-color:#e20c17!important;
+  } 
+  /* Menu Bar */
+  /* Fonts */
+  .font-slider-left-header {
+    font-size: 45%;
+    text-align: center;
+    font-style: bold;
+    color: White;
+    font-family: times New Roman;
+  }
+    .font-slider-left-text {
+    font-size: 20%;
+    text-align: center;
+    color: White;
+        font-family: times New Roman;
+  }
+  /* Fonts */
+  /* Images */
+    }
+    #imgdiv{
+      background-image:url("http://172.16.2.250/wp-content/uploads/2018/11/slideshowpicture1.png");
+      width:100%;
+      height:350px;
+      background-repeat:no-repeat;
+      background-size:cover;
+      }
+     #icondiv{
+      display:block;
+      background-image:url("http://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_452651/Image/HomeScreen/Icon/logo1.png");
+      height:100px;
+      margin-left:auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+       background-size: contain;
+     }
+  /* Images */
+  /* Slider */
+ .slider-left{
+
+         border-style: solid;
+   border-color: BLACK;
+   padding: 15% 0px 15% 0%;
+
+
+
+
+ }
+ .slider-right{
+
+      border-style: solid;
+   border-color: BLACK;
+   padding: 15% 0px 15% 0%;
+
+
+
+   
+ }
+ .slider-container{
+   display:grid;
+   grid-template-columns: 20% 60%;
+   background: #e20c17;
+   column-gap: 1em;
+   padding: 5% 0px 5% 16%;
+   }
+
+.slider-container > div {
+  padding: 3em;
+}
+
+   /* Quick Links */
+ .quicklink-container{
+   border-style: solid;
+   border-color: #e20c17;
+   position: relative;
+  display: table-row;
+  align-items: center;
+    margin: auto;
+
+ }
+   
+.ql-sub-container {
+   border-style: solid;
+   border-color: #e20c17;
+  margin: 6%;
+   
+}
+.ql{
+  position: "relative";
+  margin: 0 auto;
+  width: 55px;
+}
+.ql .img-base{
+    width: 55px;
+    height: 55px;
+    background-color: #e20c17;
+    border: solid 2px #e20c17;
+    border-radius: 50%;
+    padding: 2% 7%;
+    -webkit-transition-duration:400ms;
+    transition-duration: 400ms;
+    padding: .5px .5px .5px .5px;
+}
+.ql .img-layer{
+    display: none;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    top: 0;
+    left: 0;
+    border: solid 2px #e20c17;
+    border-radius: 50%;
+    padding: 2% 7%;
+    -webkit-transition-duration:200ms;
+    transition-duration: 200ms;
+    padding: .5px .5px .5px .5px;
+}
+.ql:hover .img-layer{
+    display:inline;
+    background-color: WHITE;
+    color: White;
+    text-decoration: none;
+}
+/* Quick Links */
+
+/* Column Container */
+.columns{
+  display: table-row;
+  border-style: solid;
+   border-color: #e20c17;
+   position: relative;
+   margin-top: 2%;
+}
+/* Column Container */
+
+/* Twitter */
+.twitter-container {
+   border-style: solid;
+   border-color: #e20c17;
+   position: relative;
+  display: table-row;
+  float: left;
+  width: 50% !important;
+  margin-left: 8%;
+   position: relative;
+}
+/* Twitter */
+
+
+/* Side panel */
+.sidepanel-container {
+   border-style: solid;
+   border-color: #e20c17;
+   position: relative;
+  display: table-row;
+  float : right;
+  margin-right: 8%;
+  width:30%;
+   position: relative;
+}
+/* Side panel */
+
+/* News Container */
+ .news-container{
+  display: table-row;
+  border-style: solid;
+   border-color: #e20c17;
+   position: relative;
+   margin-top: 2%;
+}
+
+.news-content{
+  Margin: auto;
+}
+/* News Container */
