@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <head>
-   <link rel="stylesheet" href="https://codepen.io/Tinkererer/pen/VVrovy.css">
+   <link rel="stylesheet" href="https://github.com/RCSDTech/rcsdtech.github.io/blob/master/CSSGit.css">
   <body>
 <!-- Navbar -->
 <div class="pagewrapper">
