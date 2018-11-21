@@ -2,7 +2,7 @@
   /* Menu Bar */
 .FloatCenter{
   float:center;
-}
+  }
 .topofpage{
   width:100%;
   z-index:1;
@@ -19,7 +19,7 @@
   font-size:18px!important;
   margin: auto;
   float:center;
-}
+  }
 .Navbar{
   padding:8px 16px;
   
@@ -51,13 +51,21 @@
   }
 .Navbar:hover{
   box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  
+  }  
 .white,.hover-white:hover{
   color:WHITE!important;
   background-color:#e20c17!important;
   } 
   /* Menu Bar */
+  /* Menu Bar */
+.subpagewrapper{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  }
+
+.slider-container > div {
+  padding: 3em;
+  }
 </style>
 
 
@@ -66,12 +74,24 @@
 <div class="topofpage FloatCenter">
   <header class=" red NavbarDiv">
    
+ 
+
+
+
      <a href="http://172.16.2.250/staff-directory" class="Navbar hover-white">Staff Directory</a>
     <a href="http://172.16.2.250/Staff" class="Navbar hover-white">Staff</a>
     <a href="http://172.16.2.250/Students" class="Navbar hover-white">Students</a>
     <a href="http://172.16.2.250/Parents" class="Navbar hover-white">Parents</a>
     <a href="http://172.16.2.250/Schools" class="Navbar hover-white">Schools</a>
-    <a href="/announcements.html" class="Navbar hover-white">Announcements</a>    
-    <a href="/index.html" class="Navbar white">Home </a>
+    <a href="/announcements.html" class="Navbar white">Announcements</a>    
+    <a href="/index.html" class="Navbar hover-white">Home </a>
   </header>
      </div>
+<!-- Navbar -->
+
+<!-- Layout -->
+<div class="subpagewrapper">
+
+<div> Test</div>
+<div> Test</div>
+</div>
