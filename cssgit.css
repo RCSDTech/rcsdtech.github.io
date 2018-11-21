@@ -144,9 +144,9 @@ h1,button {font-family: "Montserrat", sans-serif}
    border-style: solid;
    border-color: #e20c17;
    position: relative;
-  display: table-row;
-  align-items: center;
-    margin: auto;
+   display: block;
+   align-items: center;
+   margin: auto;
 
  }
    
