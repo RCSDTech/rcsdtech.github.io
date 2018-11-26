@@ -14,7 +14,7 @@ h1,button {font-family: "Montserrat", sans-serif}
 }
 
   /* Home Page { */
-  /* Menu Bar */
+
 .FloatCenter{
   float:center;
 }
@@ -28,55 +28,68 @@ h1,button {font-family: "Montserrat", sans-serif}
   top:0;
     }
 
-.red,.hover-red:hover{
-  color:#707070!important;
-  background-color:White!important;
-  }
-.NavbarDiv{
-  text-align:left!important;
-  font-size:18px!important;
-  margin: auto;
-  float:center;
+  /* Menu Bar */ 
+a {
+  text-decoration: none;
 }
 
-.Navbar{
-  padding:8px 16px;
-  
-  float:right;
-  width:auto;
-  border:none;
-  display:block;
-  outline:0;
-  /*button*/
-    border:none;
-  display:inline-block;
-  padding:8px 16px;
-  vertical-align:middle;
-  overflow:hidden;
-  text-decoration:none;
-  color:inherit;
-  background-color:inherit;
-  text-align:center;
-  cursor:pointer;
-  white-space:nowrap;
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  /*Large-Padding*/
-  padding:12px 24px!important;
-  }
+nav {
 
-.Navbar:hover{
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  }
+}
+
+ul {
+  background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    font-size: 18px;
+  background: WHITE;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
   
-.white,.hover-white:hover{
-  color:WHITE!important;
-  background-color:#e20c17!important;
-  } 
+li a {
+  color: #707070;
+}
+
+li:hover {
+    background: #e20c17;
+    cursor: pointer;
+
+}
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+
+}
   /* Menu Bar */
   /* Fonts */
   .font-slider-left-header {
@@ -252,21 +265,57 @@ h1,button {font-family: "Montserrat", sans-serif}
 /* News Container */
 
      </style>
-<!-- Navbar -->
 <div class="pagewrapper">
 <div class="topofpage FloatCenter">
-  <header class=" red NavbarDiv">
+<!-- Navbar -->
+ <nav role="navigation">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/announcements.html">Announcements</a>
+      <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul>
+    </li>
+    <li><a href="/index.html">Schools</a>
+          <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul></li>
+    <li><a href="/index.html">Parents</a>
+          <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul></li>
+    <li><a href="/index.html">Students</a>
+      <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul>
+    </li>
+    <li><a href="/index.html">Staff</a>
+          <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul></li>
+    <li><a href="/index.html">Staff Directory</a>
+          <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul></li>
    
-     <a href="http://172.16.2.250/staff-directory" class="Navbar hover-white">Staff Directory</a>
-    <a href="http://172.16.2.250/Staff" class="Navbar hover-white">Staff</a>
-    <a href="http://172.16.2.250/Students" class="Navbar hover-white">Students</a>
-    <a href="http://172.16.2.250/Parents" class="Navbar hover-white">Parents</a>
-    <a href="http://172.16.2.250/Schools" class="Navbar hover-white">Schools</a>
-    <a href="/announcements.html" class="Navbar hover-white">Announcements</a>    
-    <a href="/index.html" class="Navbar white">Home </a>
-
-  </header>
+  </ul>
+</nav>
      </div>
+
+<!-- Navbar -->
+
      <div class="slider-container pagewrapper-col">
 
   <section class="slider-left">
