@@ -36,8 +36,11 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
   margin: auto;
   float:center;
   font-family: Georgia;
+ position:relative;
+
 }
 .Navbar{
+
   padding:5px 16px;
  float:left;
   width:auto;
@@ -49,7 +52,7 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
   display:inline-block;
   padding:8px 16px;
   vertical-align:middle;
-  overflow:hidden;
+  overflow:visible;
   text-decoration:none;
   color:inherit;
   background-color:inherit;
@@ -66,27 +69,33 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
   padding:6px 24px!important;
   }
 .Navbar:hover{
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ 
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)t;
  
   }
   
 .white,.hover-white:hover{
   color:WHITE!important;
   background-color:#e20c17!important;
-    z-index: 5 !important;
-    border-bottom: 100px !important;
-    border-color: #e20c17;
-  } 
+
+}
+.white{
+   box-shadow:0px 15px 0px 0px #e20c17; !important;
+}
 
 .navbaricon {
   width: 18px;
   height:auto;
   background-color:#b20000;
+
 }
 .navbarhomeicon {
   width: 23px;
   height:auto;
   background-color:#b20000;
+      border-bottom: 100px !important;
+    border-color: #e20c17;
+
 }
 .navbarsearch {
   width: 15%;
