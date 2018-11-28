@@ -306,13 +306,46 @@ display: block;
   Margin: auto;
 }
 /* News Container */
+/*Hamburger Menu*/
+#hamburger {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+/* Hamburger Menu*/
      </style>
 <!-- Navbar -->
+<div id="hamburger">
+  
+  <div>
+   Test test test
+  
+  </div>
+  <div>
+  <a href="javascript:off();">
+<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white " onlick="on()"></a>
+  <h1>
+  Header
+  </h1>
+  <p>
+  paragraph
+  </p>
+  </div>
+</div>
 <div class="pagewrapper">
 <div class="topofpage FloatCenter">
   <header class=" red NavbarDiv">
-   <a href="Java SCRIPT JAZZ">
-<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white "></a>
+   <a href="javascript:on();">
+<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white " onlick="on()"></a>
+
 
  <a href="Home">
 <img alt="RCSD Home" src="https://i.imgur.com/NYFT4CC.png" class="navbarhomeicon Navbar white "></a>
@@ -448,4 +481,13 @@ qwdasd
 <!-- NEWS -->
 
 </div>
+<script>
+function on() {
+    document.getElementById("hamburger").style.display = "block";
+}
+
+function off() {
+    document.getElementById("hamburger").style.display = "none";
+}
+</script>
 </html>
