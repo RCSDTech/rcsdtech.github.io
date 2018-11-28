@@ -1,34 +1,48 @@
-<style>
-
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-h1,button {font-family: "Montserrat", sans-serif}
+     <html>
+   <link rel="stylesheet" href="https://rcsdtech.github.io/cssgit.css">
+     <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1,button {font-family: "Helvetica", "Times", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
+.pagewrapper {
+  display: grid;
+  width:100%;
+
+}
+  /* Home Page { */
   /* Menu Bar */
 .FloatCenter{
   float:center;
-  }
+}
 .topofpage{
   width:100%;
   z-index:1;
+ 
   }
 .topofpage{
   top:0;
+   background-color:#CD0D17;
+     box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   
     }
 .red,.hover-red:hover{
-  color:#707070!important;
-  background-color:White!important;
+  color:WHITE!important;
+  background-color:#CD0D17!important;
   }
 .NavbarDiv{
   text-align:left!important;
-  font-size:18px!important;
+  font-size:16px!important;
   margin: auto;
   float:center;
-  }
+  font-family: Georgia;
+ position:relative;
+
+}
 .Navbar{
-  padding:8px 16px;
-  
-  float:right;
+
+  padding:5px 16px;
+ float:left;
   width:auto;
   border:none;
   display:block;
@@ -38,7 +52,7 @@ h1,button {font-family: "Montserrat", sans-serif}
   display:inline-block;
   padding:8px 16px;
   vertical-align:middle;
-  overflow:hidden;
+  overflow:visible;
   text-decoration:none;
   color:inherit;
   background-color:inherit;
@@ -52,109 +66,287 @@ h1,button {font-family: "Montserrat", sans-serif}
   -ms-user-select:none;
   user-select:none;
   /*Large-Padding*/
-  padding:12px 24px!important;
+  padding:6px 24px!important;
   }
 .Navbar:hover{
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ box-shadow:0px 2px 0px 0px #e20c17; !important;
+
+ 
   }  
 .white,.hover-white:hover{
   color:WHITE!important;
   background-color:#e20c17!important;
-  } 
-  /* Menu Bar */
-  /* Menu Bar */
-  .outterwrapper{
-    display:grid;
-  }
-  
-    .outterwrapper > div{
-    display:grid;
-  border-style: solid;
-  border-color: GREEN;
-  padding: 1em;
-  }
-.subpagewrapper{
-  display: grid;
-  grid-template-columns: 98%;
-  padding-top:1%;
-  padding-bottom:1%;
-  padding-left:1%;
-  padding-right:1%;
-  border-style: solid;
-  border-color: #e20c17;
-  background-color: #F8F8F8;
-  }
 
-.subpagewrapper > div {
-  padding: 3em;
-      border-style: solid;
-  border-color: BLACK;
+}
+.white{
+   box-shadow:0px 2px 0px 0px #e20c17; !important;
+}
+.navbaricon {
+  width: 18px;
+  height:auto;
+  background-color:#CD0D17;
+
+}
+.navbarhomeicon {
+  width: 23px;
+  height:auto;
+  background-color:#CD0D17;
+      border-bottom: 100px !important;
+    border-color: #e20c17;
+
+}
+.navbarsearch {
+  width: 15%;
+  height:18px;
+  background-color:#CD0D17;
+}
+.navbarignore {
+  box-shadow:0 0px 0px 0 rgba(0,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.0) !important;
+}
+.navbarright{
+  float:right !important;
+}
+  /* Menu Bar */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+   
+}
+.dropdown .dropbtn {
+    font-size: 16px;   
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px 20px;
+    background-color: 
+    inherit;
+    margin: 0;
+    font-family: Georgia;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #e20c17;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
     background-color: WHITE;
+    min-width: 160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #e20c17;
+    color:white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 
-  }
-  .subpagewrapper-lcolumn{
-  display: grid;
-  grid-template-columns: 48% 40%;
-  padding-top:1%;
-   padding-bottom:1%;
-     padding-left:1%;
-  padding-right:1%;
-  float:left;
-  border-style: solid;
-  border-color: #e20c17;
-  background-color: #F8F8F8;
-  grid-gap: 10%;
-  }
 
-.subpagewrapper-lcolumn > div {
-  padding: 3em;
-  background-color: WHITE;
-    border-style: solid;
-  border-color: BLACK;
-
-  }
-
+}
+  /* Menu Bar */
+#hamburger {
   
-  .maincontentbox{
-    
-  }
-</style>
+    position: absolute; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    z-index: 6;
+}
+.hcontent{
+  display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
 
-<div class="outterwrapper">
+}
+.hscontent{
+height:40em;
+width:60em;
+background-color:WHITE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.htopbar{
+  width:100%;
+  height:7%;
+  background-color:#CD0D17;
+  text-align:center;
+  font-family:Georgia;
+  font-size:40px;
+  font-style:bold;
+  color: WHITE;
+}
+/* Hamburger Menu*/
+.subp-outter-wrapper{
+     display:grid;
+  grid-gap: 1em;
+  grid-auto-rows:300px, auto;
+}
+.subp-outter-wrapper > div{
+    padding:1em;
+}
+/* sp Div */
+.subp{
+   grid-column: 1/3;
+ grid-row: 1/3;
+  padding-top:2%;
+    display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
+}
+.subp-content-holder{
+  height:100em;
+width:50em;
+background-color:WHITE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sibling{
+   grid-column: 2;
+   grid-row:1/3;
+ 
+  padding-top:2%;
+    display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
+z-index:4;
+}
+.sibling-content-holder{
+  height:40em;
+width:15em;
+background-color:RED;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ 
+}
+/* sp Div */
+     </style>
+     
 
 <!-- Navbar -->
 <div class="pagewrapper">
 <div class="topofpage FloatCenter">
   <header class=" red NavbarDiv">
-   
- 
+   <a href="javascript:on();">
+<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white " onlick="on()"></a>
 
 
+ <a href="Home">
+<img alt="RCSD Home" src="https://i.imgur.com/NYFT4CC.png" class="navbarhomeicon Navbar white "></a>
 
-     <a href="http://172.16.2.250/staff-directory" class="Navbar hover-white">Staff Directory</a>
-    <a href="http://172.16.2.250/Staff" class="Navbar hover-white">Staff</a>
-    <a href="http://172.16.2.250/Students" class="Navbar hover-white">Students</a>
-    <a href="http://172.16.2.250/Parents" class="Navbar hover-white">Parents</a>
-    <a href="http://172.16.2.250/Schools" class="Navbar hover-white">Schools</a>
-    <a href="/announcements.html" class="Navbar white">Announcements</a>    
-    <a href="/index.html" class="Navbar hover-white">Home </a>
+  <div class="dropdown">
+    <button class="dropbtn">District 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Schools 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Parents 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Staff 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Students 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+<!-- right side Nav -->
+<a href="URL/admin" class="Navbar hover-white navbarright">login</a>
+<a href="http://172.16.2.250/Staff" class="Navbar hover-white navbarright">Translate</a>
+<a href="Java SCRIPT JAZZ">
+<img alt="RCSD Search" src="https://i.imgur.com/KiVLCMN.png" class="navbarsearch Navbar  navbarright navbarignore"></a>
+
+
   </header>
      </div>
-<!-- Navbar -->
+     <!--Hamburger Menu-->
+     <div id="hamburger">
+  
+  <div class="hcontent">
 
-<!-- Layout -->
-<div class="subpagewrapper">
+  <div class="hscontent">
+    
+  <div class="htopbar">
+  RCSD INDEX
+  </div>
 
-<div> Test</div>
+  <div>
+  <a href="javascript:off();">
+<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white " onlick="on()"></a>
+  </div>
+   Test test test
+  </div>
+  </div>
 </div>
-<div class="subpagewrapper-lcolumn">
+   <!--Hamburger Menu-->
+   <!--sp Div-->
+   <div class="subp-outter-wrapper">
+   
 
-<div> Test</div>
-<div> Test</div>
-</div>
-<div class="subpagewrapper">
+   <div class="subp">
+   <div class="subp-content-holder">
+   asd
+   </div>
+   </div>
+     <div class="siblingp">
+   <div class="sibling-content-holder">
+   asd
+   </div>
+   </div>   
+   </div>
+   <!--sp Div-->
+<script>
+function on() {
+    document.getElementById("hamburger").style.display = "block";
+}
 
-<div> Test</div>
-<div> Test</div>
-</div>
-</div>
+function off() {
+    document.getElementById("hamburger").style.display = "none";
+}
+</script>
+
+ </body>
+</html>
