@@ -308,38 +308,40 @@ display: block;
 /* News Container */
 /*Hamburger Menu*/
 #hamburger {
-    position: fixed; /* Sit on top of the page content */
+  
+    position: absolute; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    z-index: 6;
+}
+.hcontent{
+  display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
+
+}
+.hscontent{
+height:40em;
+width:60em;
+background-color:WHITE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.htopbar{
+  width:100%;
+  height:7%;
+  background-color:#CD0D17;
+  text-align:center;
+  font-family:Georgia;
+  font-size:40px;
+  font-style:bold;
+  color: WHITE;
 }
 /* Hamburger Menu*/
      </style>
 <!-- Navbar -->
-<div id="hamburger">
-  
-  <div>
-   Test test test
-  
-  </div>
-  <div>
-  <a href="javascript:off();">
-<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white " onlick="on()"></a>
-  <h1>
-  Header
-  </h1>
-  <p>
-  paragraph
-  </p>
-  </div>
-</div>
+
 <div class="pagewrapper">
 <div class="topofpage FloatCenter">
   <header class=" red NavbarDiv">
@@ -407,17 +409,28 @@ display: block;
 <img alt="RCSD Search" src="https://i.imgur.com/KiVLCMN.png" class="navbarsearch Navbar  navbarright navbarignore"></a>
 
 
-
-    
-
-
- 
-    
-   
-    
-
   </header>
      </div>
+     <!--Hamburger Menu-->
+     <div id="hamburger">
+  
+  <div class="hcontent">
+
+  <div class="hscontent">
+    
+  <div class="htopbar">
+  RCSD INDEX
+  </div>
+
+  <div>
+  <a href="javascript:off();">
+<img  alt="RCSD MENU" src="https://i.imgur.com/xS3iL27.png"  class="navbaricon Navbar hover-white " onlick="on()"></a>
+  </div>
+   Test test test
+  </div>
+  </div>
+</div>
+   <!--Hamburger Menu-->
      <div class="slider-container pagewrapper-col">
 
   <section class="slider-left">
