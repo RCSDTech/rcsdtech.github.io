@@ -37,10 +37,8 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
   float:center;
   font-family: Georgia;
  position:relative;
-
 }
 .Navbar{
-
   padding:5px 16px;
  float:left;
   width:auto;
@@ -70,24 +68,20 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
   }
 .Navbar:hover{
  box-shadow:0px 2px 0px 0px #e20c17; !important;
-
  
   }
   
 .white,.hover-white:hover{
   color:WHITE!important;
   background-color:#e20c17!important;
-
 }
 .white{
    box-shadow:0px 2px 0px 0px #e20c17; !important;
 }
-
 .navbaricon {
   width: 18px;
   height:auto;
   background-color:#CD0D17;
-
 }
 .navbarhomeicon {
   width: 23px;
@@ -95,7 +89,6 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
   background-color:#CD0D17;
       border-bottom: 100px !important;
     border-color: #e20c17;
-
 }
 .navbarsearch {
   width: 15%;
@@ -127,7 +120,6 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #e20c17;
-
 }
 .dropdown-content {
     display: none;
@@ -149,12 +141,12 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
     background-color: #e20c17;
     color:white;
         
-
 }
 .dropdown:hover .dropdown-content {
     display: block;
-
-
+}
+.dropdownright{
+  float:right !important;
 }
   /* Menu Bar */
   /* Fonts */
@@ -320,7 +312,6 @@ display: block;
 .news-content{
   Margin: auto;
 }
-
 /* News Container */
 /* News Container */
  .supmsg-container{
@@ -339,7 +330,6 @@ display: block;
 .supmsg-content{
   Margin: auto;
 }
-
 /* News Container */
 /*Hamburger Menu*/
 #hamburger {
@@ -355,7 +345,6 @@ display: block;
 justify-content: center;
 align-content: center;
 height:100%;
-
 }
 .hscontent{
 height:40em;
@@ -388,90 +377,6 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
  background-color: #e20c17;
   }  
 /* Hamburger Menu*/
-/* Translate */
-.ct-navbar {
-  padding-left: 0px !important;
-   padding-right: 0px !important;
-    padding-top: 0px !important;
-     padding-bottom: 0px !important;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-.ct-navbar-btn {
-  padding-left: 0px !important;
-   padding-right: 0px !important;
-    padding-top: 6px !important;
-     padding-bottom: 0px !important;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-.ct-topbar {
-  text-align: right;
-  background: #eee;
-    margin-bottom: 0px;
-
-}
-
-.ct-language__dropdown{
-	padding-top: 8px;
-	max-height: 0;
-	overflow: hidden;
-	position: absolute;
-	top: 110%;
-
-	-webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-	width: 100%;
-	text-align: center;
-	padding-top: 0;
-  z-index:200;
-}
-.ct-language__dropdown li{
-	background: #222;
-	padding: 5px;
-}
-.ct-language__dropdown li a{
-	display: block;
-}
-.ct-language__dropdown li:first-child{
-	padding-top: 10px;
-	border-radius: 3px 3px 0 0;
-}
-.ct-language__dropdown li:last-child{
-
-	border-radius: 0 0 3px 3px;
-}
-.ct-language__dropdown li:hover{
-	background: #444;
-}
-.ct-language__dropdown:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 8px;
-	height: 0;
-	border: 0 solid transparent;
-	border-right-width: 8px;
-	border-left-width: 8px;
-	border-bottom: 8px solid #222;
-}
-.ct-language{
-	position: relative;
-  color: #fff;
-  width:auto;
-}
-.ct-language:hover .ct-language__dropdown{
-	max-height: 200px;
-
-}
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
-/* Translate */
      </style>
 <!-- Navbar -->
 
@@ -553,22 +458,19 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
     </div>
   </div>
 <!-- right side Nav -->
-<a href="URL/admin" class="Navbar hover-white navbarright">Login</a>
-<div class="Navbar hover-white navbarright ct-navbar">
-  <div class="container">
-	<ul class="list-unstyled list-inline ct-topbar__list ct-navbar-btn">
-	  <li class="ct-language">Translate <i class="fa fa-arrow-down"></i>
-		<ul class="list-unstyled ct-language__dropdown">
-		  <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
-		  <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a></li>
-		  <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="FRANCE"></a></li>
-		  <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="CHINA"></a></li>
-		  <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a></li>
-		</ul>
-	  </li>
-	</ul>
+<a href="URL/admin" class="Navbar hover-white navbarright">login</a>
+<!-- 
+<a href="http://172.16.2.250/Staff" class="Navbar hover-white navbarright">Translate</a> -->
+ <div class="Navbar hover-white navbarright">
+ <div class="dropdown">
+    <button class="dropbtn">Translate 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <div id="google_translate_element"></div>
+    </div>
+    </div>
   </div>
-</div>
 <a href="Java SCRIPT JAZZ">
 <img alt="RCSD Search" src="https://i.imgur.com/KiVLCMN.png" class="navbarsearch Navbar  navbarright navbarignore"></a>
 
@@ -665,9 +567,14 @@ qwdasd
 function on() {
     document.getElementById("hamburger").style.display = "block";
 }
-
 function off() {
     document.getElementById("hamburger").style.display = "none";
 }
 </script>
-</html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
