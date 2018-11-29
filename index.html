@@ -389,10 +389,27 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
   }  
 /* Hamburger Menu*/
 /* Translate */
+.ct-navbar {
+  padding-left: 0px !important;
+   padding-right: 0px !important;
+    padding-top: 0px !important;
+     padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.ct-navbar-btn {
+  padding-left: 0px !important;
+   padding-right: 0px !important;
+    padding-top: 6px !important;
+     padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
 .ct-topbar {
   text-align: right;
   background: #eee;
     margin-bottom: 0px;
+
 }
 
 .ct-language__dropdown{
@@ -404,7 +421,7 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
 
 	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
-	width: 100px;
+	width: 100%;
 	text-align: center;
 	padding-top: 0;
   z-index:200;
@@ -443,7 +460,6 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
 }
 .ct-language{
 	position: relative;
-  background: #00aced;
   color: #fff;
   width:auto;
 }
@@ -538,9 +554,9 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
   </div>
 <!-- right side Nav -->
 <a href="URL/admin" class="Navbar hover-white navbarright">Login</a>
-<div class="Navbar hover-white navbarright">
+<div class="Navbar hover-white navbarright ct-navbar">
   <div class="container">
-	<ul class="list-unstyled list-inline ct-topbar__list">
+	<ul class="list-unstyled list-inline ct-topbar__list ct-navbar-btn">
 	  <li class="ct-language">Translate <i class="fa fa-arrow-down"></i>
 		<ul class="list-unstyled ct-language__dropdown">
 		  <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
