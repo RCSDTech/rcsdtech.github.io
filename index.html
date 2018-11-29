@@ -388,6 +388,74 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
  background-color: #e20c17;
   }  
 /* Hamburger Menu*/
+/* Translate */
+.ct-topbar {
+  text-align: right;
+  background: #eee;
+    margin-bottom: 0px;
+}
+
+.ct-language__dropdown{
+	padding-top: 8px;
+	max-height: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 110%;
+
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	width: 100px;
+	text-align: center;
+	padding-top: 0;
+  z-index:200;
+}
+.ct-language__dropdown li{
+	background: #222;
+	padding: 5px;
+}
+.ct-language__dropdown li a{
+	display: block;
+}
+.ct-language__dropdown li:first-child{
+	padding-top: 10px;
+	border-radius: 3px 3px 0 0;
+}
+.ct-language__dropdown li:last-child{
+
+	border-radius: 0 0 3px 3px;
+}
+.ct-language__dropdown li:hover{
+	background: #444;
+}
+.ct-language__dropdown:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 8px;
+	height: 0;
+	border: 0 solid transparent;
+	border-right-width: 8px;
+	border-left-width: 8px;
+	border-bottom: 8px solid #222;
+}
+.ct-language{
+	position: relative;
+  background: #00aced;
+  color: #fff;
+  width:auto;
+}
+.ct-language:hover .ct-language__dropdown{
+	max-height: 200px;
+
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+/* Translate */
      </style>
 <!-- Navbar -->
 
@@ -469,8 +537,22 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
     </div>
   </div>
 <!-- right side Nav -->
-<a href="URL/admin" class="Navbar hover-white navbarright">login</a>
-<a href="http://172.16.2.250/Staff" class="Navbar hover-white navbarright">Translate</a>
+<a href="URL/admin" class="Navbar hover-white navbarright">Login</a>
+<div class="Navbar hover-white navbarright">
+  <div class="container">
+	<ul class="list-unstyled list-inline ct-topbar__list">
+	  <li class="ct-language">Translate <i class="fa fa-arrow-down"></i>
+		<ul class="list-unstyled ct-language__dropdown">
+		  <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
+		  <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a></li>
+		  <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="FRANCE"></a></li>
+		  <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="CHINA"></a></li>
+		  <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a></li>
+		</ul>
+	  </li>
+	</ul>
+  </div>
+</div>
 <a href="Java SCRIPT JAZZ">
 <img alt="RCSD Search" src="https://i.imgur.com/KiVLCMN.png" class="navbarsearch Navbar  navbarright navbarignore"></a>
 
