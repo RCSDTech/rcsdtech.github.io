@@ -1,42 +1,51 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+/*
+Theme Name: RCSD
+Theme URI: https://colinstheme.org
+Author: Colin J. Oppelt
+Author URI: https://colinstheme.org
+Description: RCSD's Theme
+Version: 1.7
 
+*/
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1,button {font-family: "Helvetica", "Times", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 .pagewrapper {
   display: grid;
   width:100%;
 }
-
   /* Home Page { */
   /* Menu Bar */
 .FloatCenter{
   float:center;
 }
-
 .topofpage{
-
   width:100%;
   z-index:1;
+ 
   }
 .topofpage{
   top:0;
+   background-color:#CD0D17;
+     box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   
     }
-
 .red,.hover-red:hover{
-  color:#707070!important;
-  background-color:White!important;
+  color:WHITE!important;
+  background-color:#CD0D17!important;
   }
 .NavbarDiv{
   text-align:left!important;
-  font-size:18px!important;
+  font-size:16px!important;
   margin: auto;
   float:center;
+  font-family: Georgia;
+ position:relative;
 }
-
 .Navbar{
-  padding:8px 16px;
-  
-  float:right;
+  padding:5px 16px;
+ float:left;
   width:auto;
   border:none;
   display:block;
@@ -46,7 +55,7 @@ h1,button {font-family: "Montserrat", sans-serif}
   display:inline-block;
   padding:8px 16px;
   vertical-align:middle;
-  overflow:hidden;
+  overflow:visible;
   text-decoration:none;
   color:inherit;
   background-color:inherit;
@@ -60,191 +69,174 @@ h1,button {font-family: "Montserrat", sans-serif}
   -ms-user-select:none;
   user-select:none;
   /*Large-Padding*/
-  padding:12px 24px!important;
+  padding:6px 24px!important;
   }
-
 .Navbar:hover{
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  
+ box-shadow:0px 2px 0px 0px #e20c17; !important;
+ 
+  }  
 .white,.hover-white:hover{
   color:WHITE!important;
   background-color:#e20c17!important;
-  } 
+}
+.white{
+   box-shadow:0px 2px 0px 0px #e20c17; !important;
+}
+.navbaricon {
+  width: 18px;
+  height:auto;
+  background-color:#CD0D17;
+}
+.navbarhomeicon {
+  width: 23px;
+  height:auto;
+  background-color:#CD0D17;
+      border-bottom: 100px !important;
+    border-color: #e20c17;
+}
+.navbarsearch {
+  width: 15%;
+  height:18px;
+  background-color:#CD0D17;
+}
+.navbarignore {
+  box-shadow:0 0px 0px 0 rgba(0,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.0) !important;
+}
+.navbarright{
+  float:right !important;
+}
   /* Menu Bar */
-  /* Fonts */
-  .font-slider-left-header {
-    font-size: 45%;
-    text-align: center;
-    font-style: bold;
-    color: White;
-    font-family: times New Roman;
-  }
-    .font-slider-left-text {
-    font-size: 20%;
-    text-align: center;
-    color: White;
-        font-family: times New Roman;
-  }
-  /* Fonts */
-  /* Images */
-    }
-    #imgdiv{
-      background-image:url("http://172.16.2.250/wp-content/uploads/2018/11/slideshowpicture1.png");
-      width:100%;
-      height:350px;
-      background-repeat:no-repeat;
-      background-size:cover;
-      }
-     #icondiv{
-      display:block;
-      background-image:url("http://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_452651/Image/HomeScreen/Icon/logo1.png");
-      height:100px;
-      margin-left:auto;
-      margin-right: auto;
-      background-repeat: no-repeat;
-       background-size: contain;
-     }
-  /* Images */
-  /* Slider */
- .slider-left{
-
-         border-style: solid;
-   border-color: BLACK;
-   padding: 15% 0px 15% 0%;
-
-
-
-
- }
- .slider-right{
-
-      border-style: solid;
-   border-color: BLACK;
-   padding: 15% 0px 15% 0%;
-
-
-
-   
- }
- .slider-container{
-   display:grid;
-   grid-template-columns: 20% 60%;
-   background: #e20c17;
-   column-gap: 1em;
-   padding: 5% 0px 5% 16%;
-   }
-
-.slider-container > div {
-  padding: 3em;
-}
-
-   /* Quick Links */
- .quicklink-container{
-   border-style: solid;
-   border-color: #e20c17;
-   position: relative;
-  display: table-row;
-  align-items: center;
-    margin: auto;
-
- }
-   
-.ql-sub-container {
-   border-style: solid;
-   border-color: #e20c17;
-  margin: 6%;
+  .dropdown {
+    float: left;
+    overflow: hidden;
    
 }
-.ql{
-  position: "relative";
-  margin: 0 auto;
-  width: 55px;
+.dropdown .dropbtn {
+    font-size: 16px;   
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px 20px;
+    background-color: 
+    inherit;
+    margin: 0;
+    font-family: Georgia;
 }
-.ql .img-base{
-    width: 55px;
-    height: 55px;
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #e20c17;
-    border: solid 2px #e20c17;
-    border-radius: 50%;
-    padding: 2% 7%;
-    -webkit-transition-duration:400ms;
-    transition-duration: 400ms;
-    padding: .5px .5px .5px .5px;
 }
-.ql .img-layer{
+.dropdown-content {
     display: none;
-    position: relative;
-    width: 55px;
-    height: 55px;
-    top: 0;
-    left: 0;
-    border: solid 2px #e20c17;
-    border-radius: 50%;
-    padding: 2% 7%;
-    -webkit-transition-duration:200ms;
-    transition-duration: 200ms;
-    padding: .5px .5px .5px .5px;
-}
-.ql:hover .img-layer{
-    display:inline;
+    position: absolute;
     background-color: WHITE;
-    color: White;
+    min-width: 160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 16px;
     text-decoration: none;
+    display: block;
+    text-align: left;
 }
-/* Quick Links */
-
-/* Column Container */
-.columns{
-  display: table-row;
-  border-style: solid;
-   border-color: #e20c17;
-   position: relative;
-   margin-top: 2%;
+.dropdown-content a:hover {
+    background-color: #e20c17;
+    color:white;
 }
-/* Column Container */
-
-/* Twitter */
-.twitter-container {
-   border-style: solid;
-   border-color: #e20c17;
-   position: relative;
-  display: table-row;
-  float: left;
-  width: 50% !important;
-  margin-left: 8%;
-   position: relative;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
-/* Twitter */
-
-
-/* Side panel */
-.sidepanel-container {
-   border-style: solid;
-   border-color: #e20c17;
-   position: relative;
-  display: table-row;
-  float : right;
-  margin-right: 8%;
-  width:30%;
-   position: relative;
+.ignorepaddingdropbtn{
+  padding: 0px 0px !important;
 }
-/* Side panel */
-
-/* News Container */
- .news-container{
-  display: table-row;
-  border-style: solid;
-   border-color: #e20c17;
-   position: relative;
-   margin-top: 2%;
+  /* Menu Bar */
+#hamburger {
+  
+     position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    z-index: 6;
 }
-
-.news-content{
-  Margin: auto;
+.hcontent{
+  display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
 }
-/* News Container */
-
-
-
-
+.hscontent{
+height:40em;
+width:60em;
+background-color:WHITE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.htopbar{
+  width:100%;
+  height:7%;
+  background-color:#CD0D17;
+  text-align:center;
+  font-family:Georgia;
+  font-size:40px;
+  font-style:bold;
+  color: WHITE;
+}
+.closehamburger{
+    width: 30px;
+  height:auto;
+  background-color:#CD0D17;
+  float: right;
+   padding-top: .75%;
+ padding-right: .75%;
+ padding-left: .75%;
+ padding-bottom: .75%;
+}
+.closehamburger:hover{
+box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+ background-color: #e20c17;
+  }  
+/* Hamburger Menu*/
+.subp-outter-wrapper{
+     display:grid;
+  grid-gap: 1em;
+  grid-auto-rows:300px, auto;
+}
+.subp-outter-wrapper > div{
+    padding:1em;
+}
+/* sp Div */
+.subp{
+   grid-column: 1/3;
+ grid-row: 1/3;
+  padding-top:2%;
+    display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
+}
+.subp-content-holder{
+  height:100em;
+width:70em;
+background-color:WHITE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sibling{
+   grid-column: 2;
+   grid-row:1/3;
+ 
+  padding-top:2%;
+    display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
+z-index:4;
+}
+.sibling-content-holder{
+  height:40em;
+width:15em;
+background-color:RED;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ 
+}
+/* sp Div */
