@@ -1,14 +1,5 @@
-/*
-Theme Name: RCSD
-Theme URI: https://colinstheme.org
-Author: Colin J. Oppelt
-Author URI: https://colinstheme.org
-Description: RCSD's Theme
-Version: 1.7
 
-*/
-
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+       body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 h1,button {font-family: "Helvetica", "Times", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 .pagewrapper {
@@ -23,7 +14,6 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
 .topofpage{
   width:100%;
   z-index:1;
- 
   }
 .topofpage{
   top:0;
@@ -74,7 +64,8 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
 .Navbar:hover{
  box-shadow:0px 2px 0px 0px #e20c17; !important;
  
-  }  
+  }
+  
 .white,.hover-white:hover{
   color:WHITE!important;
   background-color:#e20c17!important;
@@ -144,17 +135,184 @@ h1,button {font-family: "Helvetica", "Times", sans-serif}
 .dropdown-content a:hover {
     background-color: #e20c17;
     color:white;
+        
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.dropdownright{
+  float:right !important;
 }
 .ignorepaddingdropbtn{
   padding: 0px 0px !important;
 }
   /* Menu Bar */
-#hamburger {
+  /* Fonts */
+  .font-slider-left-header {
+    font-size: 18px;
+    text-align: center;
+    font-style: bold;
+    color: White;
+    font-family: times New Roman;
+  }
+    .font-slider-left-text {
+    font-size: 16px;
+    text-align: center;
+    color: White;
+        font-family: times New Roman;
+  }
+  /* Fonts */
+  /* Images */
+    }
+    #imgdiv{
+      background-image:url("https://imgur.com/svPfRNR");
+      width:100%;
+      height:350px;
+      background-repeat:no-repeat;
+      background-size:cover;
+      }
+     .iconimg{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+     }
+  /* Images */
+  /* Slider */
+ .slider-left{
+   padding: 15% 0px 15% 0%;
+   align-items: center;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+ }
+ .slider-right{
+      border-style: solid;
+   border-color: BLACK;
+   padding: 15% 0px 15% 0%;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   border:0;
+ }
+ .slider-container{
+   display:grid;
+   grid-template-columns: 20% 60%;
+   background: #e20c17;
+   column-gap: 1em;
+   padding: 5% 0px 5% 16%;
+   }
+.slider-container > div {
+  padding: 3em;
+}
+   /* Quick Links */
+ .quicklink-container{
+   margin-top:1%;
+   margin-bottom:3%;
+   margin-left: 15%;
+    margin-right: 15%;
+    height: 8%;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  align-items: center;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-left:35%;
+  padding-right:35%;
+ 
   
-     position: fixed; /* Sit on top of the page content */
+ }
+   
+.ql-sub-container {
+   border-style: solid;
+   border-color: #e20c17;
+  margin: 6%;
+   
+}
+.ql{
+  position: relative;
+  width: 55px;
+  height:100%
+}
+
+/* Quick Links */
+/* Column Container */
+.columns{
+  display: table-row;
+  border-style: solid;
+   border-color: rgba(0,0,0,0.0);
+   position: relative;
+   margin-top: 2%;
+}
+/* Column Container */
+/* Twitter */
+.twitter-container {
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  float: left;
+  width: 50% !important;
+  margin-left: 8%;
+   position: relative;
+}
+/* Twitter */
+/* Side panel */
+.sidepanel-container {
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  float : right;
+  margin-right: 8%;
+  width:30%;
+   position: relative;
+     padding-top:15%;
+  padding-bottom:15%;
+}
+/* Side panel */
+/* News Container */
+ .news-container{
+   margin-top:4%;
+   margin-right:10%;
+   margin-left:10%;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  align-items: center;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-left:35%;
+  padding-right:35%;
+ 
+}
+.news-content{
+  Margin: auto;
+}
+/* News Container */
+/* News Container */
+ .supmsg-container{
+   margin-top:4%;
+   margin-right:10%;
+   margin-left:10%;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  align-items: center;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-left:35%;
+  padding-right:35%;
+ 
+}
+.supmsg-content{
+  Margin: auto;
+}
+/* News Container */
+/*Hamburger Menu*/
+#hamburger {
+   position: fixed;
+    /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -197,46 +355,3 @@ box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
  background-color: #e20c17;
   }  
 /* Hamburger Menu*/
-.subp-outter-wrapper{
-     display:grid;
-  grid-gap: 1em;
-  grid-auto-rows:300px, auto;
-}
-.subp-outter-wrapper > div{
-    padding:1em;
-}
-/* sp Div */
-.subp{
-   grid-column: 1/3;
- grid-row: 1/3;
-  padding-top:2%;
-    display:grid;
-justify-content: center;
-align-content: center;
-height:100%;
-}
-.subp-content-holder{
-  height:100em;
-width:70em;
-background-color:WHITE;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.sibling{
-   grid-column: 2;
-   grid-row:1/3;
- 
-  padding-top:2%;
-    display:grid;
-justify-content: center;
-align-content: center;
-height:100%;
-z-index:4;
-}
-.sibling-content-holder{
-  height:40em;
-width:15em;
-background-color:RED;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
- 
-}
-/* sp Div */
