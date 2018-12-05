@@ -1,9 +1,365 @@
 <html>
 <!-- Navbar -->
 <head>
-   <link rel="stylesheet" href="https://rcsdtech.github.io/cssgit.css">
-  <body>
-     
+ <body>
+     <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1,button {font-family: "Helvetica", "Times", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.pagewrapper {
+  display: grid;
+  width:100%;
+}
+  /* Home Page { */
+  /* Menu Bar */
+.FloatCenter{
+  float:center;
+}
+.topofpage{
+  width:100%;
+  z-index:1;
+  }
+.topofpage{
+  top:0;
+   background-color:#CD0D17;
+     box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   
+    }
+.red,.hover-red:hover{
+  color:WHITE!important;
+  background-color:#CD0D17!important;
+  }
+.NavbarDiv{
+  text-align:left!important;
+  font-size:16px!important;
+  margin: auto;
+  float:center;
+  font-family: Georgia;
+ position:relative;
+}
+.Navbar{
+  padding:5px 16px;
+ float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  /*button*/
+    border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:visible;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  /*Large-Padding*/
+  padding:6px 24px!important;
+  }
+.Navbar:hover{
+ box-shadow:0px 2px 0px 0px #e20c17; !important;
+ 
+  }
+  
+.white,.hover-white:hover{
+  color:WHITE!important;
+  background-color:#e20c17!important;
+}
+.white{
+   box-shadow:0px 2px 0px 0px #e20c17; !important;
+}
+.navbaricon {
+  width: 18px;
+  height:auto;
+  background-color:#CD0D17;
+}
+.navbarhomeicon {
+  width: 23px;
+  height:auto;
+  background-color:#CD0D17;
+      border-bottom: 100px !important;
+    border-color: #e20c17;
+}
+.navbarsearch {
+  width: 15%;
+  height:18px;
+  background-color:#CD0D17;
+}
+.navbarignore {
+  box-shadow:0 0px 0px 0 rgba(0,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.0) !important;
+}
+.navbarright{
+  float:right !important;
+}
+  /* Menu Bar */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+   
+}
+.dropdown .dropbtn {
+    font-size: 16px;   
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px 20px;
+    background-color: 
+    inherit;
+    margin: 0;
+    font-family: Georgia;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #e20c17;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: WHITE;
+    min-width: 160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #e20c17;
+    color:white;
+        
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdownright{
+  float:right !important;
+}
+.ignorepaddingdropbtn{
+  padding: 0px 0px !important;
+}
+  /* Menu Bar */
+  /* Fonts */
+  .font-slider-left-header {
+    font-size: 18px;
+    text-align: center;
+    font-style: bold;
+    color: White;
+    font-family: times New Roman;
+  }
+    .font-slider-left-text {
+    font-size: 16px;
+    text-align: center;
+    color: White;
+        font-family: times New Roman;
+  }
+  /* Fonts */
+  /* Images */
+    }
+    #imgdiv{
+      background-image:url("https://imgur.com/svPfRNR");
+      width:100%;
+      height:350px;
+      background-repeat:no-repeat;
+      background-size:cover;
+      }
+     .iconimg{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+     }
+  /* Images */
+  /* Slider */
+ .slider-left{
+   padding: 15% 0px 15% 0%;
+   align-items: center;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+ }
+ .slider-right{
+      border-style: solid;
+   border-color: BLACK;
+   padding: 15% 0px 15% 0%;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   border:0;
+ }
+ .slider-container{
+   display:grid;
+   grid-template-columns: 20% 60%;
+   background: #e20c17;
+   column-gap: 1em;
+   padding: 5% 0px 5% 16%;
+   }
+.slider-container > div {
+  padding: 3em;
+}
+   /* Quick Links */
+ .quicklink-container{
+   margin-top:1%;
+   margin-bottom:3%;
+   margin-left: 15%;
+    margin-right: 15%;
+    height: 8%;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  align-items: center;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-left:35%;
+  padding-right:35%;
+ 
+  
+ }
+   
+.ql-sub-container {
+   border-style: solid;
+   border-color: #e20c17;
+  margin: 6%;
+   
+}
+.ql{
+  position: relative;
+  width: 55px;
+  height:100%
+}
+
+/* Quick Links */
+/* Column Container */
+.columns{
+  display: table-row;
+  border-style: solid;
+   border-color: rgba(0,0,0,0.0);
+   position: relative;
+   margin-top: 2%;
+}
+/* Column Container */
+/* Twitter */
+.twitter-container {
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  float: left;
+  width: 50% !important;
+  margin-left: 8%;
+   position: relative;
+}
+/* Twitter */
+/* Side panel */
+.sidepanel-container {
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  float : right;
+  margin-right: 8%;
+  width:30%;
+   position: relative;
+     padding-top:15%;
+  padding-bottom:15%;
+}
+/* Side panel */
+/* News Container */
+ .news-container{
+   margin-top:4%;
+   margin-right:10%;
+   margin-left:10%;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  align-items: center;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-left:35%;
+  padding-right:35%;
+ 
+}
+.news-content{
+  Margin: auto;
+}
+/* News Container */
+/* News Container */
+ .supmsg-container{
+   margin-top:4%;
+   margin-right:10%;
+   margin-left:10%;
+   border:0;
+   box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+   position: relative;
+  display: table-row;
+  align-items: center;
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-left:35%;
+  padding-right:35%;
+ 
+}
+.supmsg-content{
+  Margin: auto;
+}
+/* News Container */
+/*Hamburger Menu*/
+#hamburger {
+   position: fixed;
+    /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    z-index: 6;
+}
+.hcontent{
+  display:grid;
+justify-content: center;
+align-content: center;
+height:100%;
+}
+.hscontent{
+height:40em;
+width:60em;
+background-color:WHITE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.htopbar{
+  width:100%;
+  height:7%;
+  background-color:#CD0D17;
+  text-align:center;
+  font-family:Georgia;
+  font-size:40px;
+  font-style:bold;
+  color: WHITE;
+}
+.closehamburger{
+    width: 30px;
+  height:auto;
+  background-color:#CD0D17;
+  float: right;
+   padding-top: .75%;
+ padding-right: .75%;
+ padding-left: .75%;
+ padding-bottom: .75%;
+}
+.closehamburger:hover{
+box-shadow:0 1px 1px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
+ background-color: #e20c17;
+  }  
+/* Hamburger Menu*/
+     </style>
 <!-- Navbar -->
 
 <div class="pagewrapper">
