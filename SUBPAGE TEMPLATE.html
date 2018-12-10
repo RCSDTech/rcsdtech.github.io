@@ -4,7 +4,51 @@
         body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 h1,button {font-family: "Helvetica", "Times", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+body {
+  margin: 40px;
+  background-color: #f8f8f8;
+}
 
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.one{
+  grid-row:1 / 100;
+  min-width:110%;
+  grid-column: 2 / 10;
+    background-color: WHITE;
+  color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 150%;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+}
+.two{
+  grid-row:2 / 20;
+   max-width:80%;
+    border-radius: 2px;
+  grid-column: 1 / 3 ;
+    background-color: #e20c17;
+  color: #000;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+}
+.box:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.wrapper {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
+}
 .pagewrapper {
   display: grid;
   width:100%;
@@ -392,22 +436,18 @@ box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   </div>
 </div>
    <!--Hamburger Menu-->
-   <!--sp Div-->
-   <div class="subp-outter-wrapper">
-   
+<head>
+<body>
 
-   <div class="subp">
-   <div class="subp-content-holder">
-   asd
-   </div>
-   </div>
-     <div class="siblingp">
-   <div class="sibling-content-holder">
-   asd
-   </div>
-   </div>   
-   </div>
-   <!--sp Div-->
+
+<div class="wrapper">
+  <div class="one">1</div>
+  <div class="two">2</div>
+
+</div>
+
+</body>
+</head>
 <script>
 function on() {
     document.getElementById("hamburger").style.display = "block";
